@@ -1,25 +1,23 @@
-# testcafe-reporter-html-testrail
+# testcafe-reporter-detailed-html
 
-This is the **html-testrail** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
+![TestCafe](https://community.devexpress.com/blogs/aspnet/16.1Release/TestCafeLogo.png)
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/miteshsavani/HTML-TestRail/master/media/Console_Output.jpg" alt="preview" />
-</p>
+This is the **detailed-html-reporter** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
 ## Install
 
 ```
-npm install testcafe-reporter-html-testrail
+npm install testcafe-reporter-detailed-html
 ```
 
 ## Usage
 
-When you run tests from the command line, specify the reporter name by using the `--reporter` option:
+When you run tests from the command line, you can use by adding the `--reporter` option:
 
+For example:
 ```
-testcafe chrome 'path/to/test/file.js' --reporter html-testrail
+testcafe chrome 'path/to/test/file.js' --reporter detailed-html
 ```
-
 
 When you use API, pass the reporter name to the `reporter()` method:
 
@@ -28,7 +26,7 @@ testCafe
     .createRunner()
     .src('path/to/test/file.js')
     .browsers('chrome')
-    .reporter('html-testrail') // <-
+    .reporter('detailed-html') // <-
     .run();
 ```
 
@@ -39,16 +37,6 @@ testCafe
 HTML_REPORT_PATH : set the report output folder | default: Node_modules's (in where plugin is installed) sibling folder
 HTML_REPORT_Name : set the report name | default: Report_TIMESTAMP.html (e.g.: Report_16_5_2018_14_46_46.html)
 ```
-
-##### Sample Report
-
-<p align="center">
-    <img src="https://raw.github.com/miteshsavani/HTML-TestRail/master/media/HTML_Output.jpg" alt="preview" />
-</p>
-
-#### For Testrail publish
-
-Before using Testrail publisher, You need to set test description in `specific format` as per bleow.
 
 ##### Format:
 
@@ -64,21 +52,9 @@ Example:
 test('Smoke | Verify the Login Page | C875986 ', async t=> { ... });
 ```
 
-`Assumption`: Testrail should contains Project which you will set as PROJECT_NAME and All the Automation test cases should present in the Testrail(that Case_ID will you set in the test description)
-
 ##### Environment Variables
 ```
-TESTRAIL_ENABLE : set true to enable Testrail api | default: false
-TESTRAIL_HOST : https://mitesh.testrail.com/ 
-TESTRAIL_USER : username
-TESTRAIL_PASS : password or api key
 PROJECT_NAME : project name
 PLAN_NAME : plan name | default: TestAutomation_1
 ```
-`Note:` If you do not specify the ``PLAN_NANE`` then plugin will create `TestAutomation_1` plan name (if not exist) in the given Project  
-
-## Author
-Mitesh Savani (https://github.com/miteshsavani)
-
-
  
