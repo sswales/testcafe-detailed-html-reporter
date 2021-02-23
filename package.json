@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-detailed-html",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "HTML TestCafe reporter plugin.",
   "repository": "",
   "author": {
@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "bluebird": "^3.4.6",
-    "request": "^2.72.0",
-    "deasync": "^0.1.0"
+    "deasync": "^0.1.0",
+    "request": "^2.72.0"
   }
 }
