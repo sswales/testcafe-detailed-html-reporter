@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-detailed-html",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HTML TestCafe reporter plugin.",
   "repository": "",
   "author": {
@@ -8,9 +8,9 @@
     "email": "info@swalesconsutlancy.co.uk",
     "url": "https://www.swalesconsultancy.co.uk/"
   },
-  "main": "lib/index",
+  "main": "src/index",
   "files": [
-    "lib"
+    "src"
   ],
   "scripts": {
     "test": "echo 'Testing'"
