@@ -15,6 +15,10 @@ gulp.task('lint', () => {
     .pipe(eslint.failAfterError());
 });
 
+gulp.task('test', async () => {
+  console.log('test');
+});
+
 gulp.task('build', () => {
   return gulp.src('src/**/*.js').pipe(babel()).pipe(gulp.dest('lib'));
 });
