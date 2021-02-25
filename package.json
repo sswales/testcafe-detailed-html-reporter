@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-detailed-html",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "HTML TestCafe reporter plugin.",
   "repository": "",
   "author": {
@@ -8,12 +8,17 @@
     "email": "info@swalesconsutlancy.co.uk",
     "url": "https://www.swalesconsultancy.co.uk/"
   },
-  "main": "src/index",
+  "main": "lib/index",
   "files": [
-    "src"
+    "lib"
   ],
   "scripts": {
-    "test": "echo 'Testing'"
+    "clean": "gulp clean",
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "build": "gulp build",
+    "preview": "preview",
+    "publish-please": "publish-please"
   },
   "keywords": [
     "testcafe",
@@ -22,15 +27,16 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "^4.0.10",
-    "callsite-record": "^3.2.0",
-    "del": "^1.2.0",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^5.2.1",
-    "gulp-eslint": "^1.1.1",
-    "gulp-mocha": "^2.2.0",
+    "babel-eslint": "^10.1.0",
+    "callsite-record": "^4.1.3",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-mocha": "^8.0.0",
+    "publish-please": "^5.5.2",
     "read-file-relative": "^1.2.0",
-    "testcafe": "^0.2.0-alpha"
+    "testcafe": "^1.11.0"
   },
   "dependencies": {
     "bluebird": "^3.4.6",

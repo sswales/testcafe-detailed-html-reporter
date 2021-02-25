@@ -1,8 +1,14 @@
+'use strict';
+
 let request = require('request');
 let qs = require('querystring');
 let Promise = require('bluebird');
 
-export default function () {
+Object.defineProperty(exports, '__esModule', {
+  value: true,
+});
+
+exports['default'] = () => {
   return {
     noColors: false,
     startTime: null,
@@ -291,4 +297,4 @@ export default function () {
       }
     },
   };
-}
+};
